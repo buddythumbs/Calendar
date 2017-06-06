@@ -1,0 +1,33 @@
+html, body{
+    margin:0px;
+    padding:0px;
+    height:100%;
+    overflow:hidden;
+}
+/*event in day or week view*/
+.dhx_cal_event.shift_event div{
+    background-color: #009966 !important;
+    color: black !important;
+}
+.dhx_cal_event.vacation_event div{
+    background-color: #FF9933 !important;
+    color: black !important;
+}
+
+/*multi-day event in month view*/
+.dhx_cal_event_line.shift_event{
+    background-color: #009966 !important;
+    color: black !important;
+}
+.dhx_cal_event_line.vacation_event{
+    background-color: #FF9933 !important;
+    color: black !important;
+}
+
+/*event with fixed time, in month view*/
+.dhx_cal_event_clear.shift_event{
+    color: black !important;
+}
+.dhx_cal_event_clear.vacation_event{
+    color: black !important;
+}
