@@ -5,38 +5,72 @@ html, body{
     overflow:hidden;
 }
 /*event in day or week view*/
-.dhx_cal_event.shift_event div{
-    background-color: #009966 !important;
+.dhx_cal_event.requested_req div{
+    background-color: #FED100 !important;
     color: black !important;
 }
-.dhx_cal_event.vacation_event div{
-    background-color: #FF9933 !important;
+.dhx_cal_event.approved_req div{
+    background-color: #34B233 !important;
     color: black !important;
 }
 
 /*multi-day event in month view*/
-.dhx_cal_event_line.shift_event{
-    background-color: #009966 !important;
-    color: black !important;
+.dhx_cal_event_line.requested_req{
+    background-color: #FED100 !important;
+    color: white !important;
 }
-.dhx_cal_event_line.vacation_event{
-    background-color: #FF9933 !important;
-    color: black !important;
+.dhx_cal_event_line.approved_req{
+    background-color: #34B233 !important;
+    color: white !important;
 }
 
 /*event with fixed time, in month view*/
-.dhx_cal_event_clear.shift_event{
+.dhx_cal_event_clear.requested_req{
+    color: white !important;
+}
+.dhx_cal_event_clear.approved_req{
+    color: white !important;
+}
+.dhx_cal_event_clear.night_shift{
+    color: black !important;
+    background-color: transparent;
+}
+.dhx_cal_event_clear.day_shift{
+    color: white !important;
+    background-color: transparent;
+}
+/*event with fixed time, in year view*/
+.dhx_month_head.dhx_year_event.requested_req{
+    background-color: #FED100 !important;
     color: black !important;
 }
-.dhx_cal_event_clear.vacation_event{
+.dhx_month_head.dhx_year_event.approved_req{
+    background-color: #34B233 !important;
     color: black !important;
 }
-/*event with fixed time, in month view*/
-.dhx_month_head.dhx_year_event.shift_event{
-    background-color: #009966 !important;
-    color: black !important;
+.dhx_month_head.dhx_year_event.shift{
+    background-color: transparent !important;
+    color: white !important;
 }
-.dhx_month_head.dhx_year_event.vacation_event{
-    background-color: #FF9933 !important;
-    color: black !important;
+#my_form {
+	position: absolute;
+	top: 100px;
+	left: 200px;
+	z-index: 10001;
+	display: none;
+	background-color: white;
+	border: 2px outset gray;
+	padding: 20px;
+	font-family: Tahoma;
+	font-size: 10pt;
+}
+.dhx_year_tooltip{
+  width: 120px;
+}
+.night_shift{
+  background-color: #666666;
+  border-radius: 10px:
+}
+.day_shift{
+  background-color: #86CEF4;
 }

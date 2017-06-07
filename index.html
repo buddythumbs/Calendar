@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Calendar</title>
+    <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/3.0.0/themes/material_blue.css" />
     <link rel="stylesheet" href="./lib/css/dhtmlxscheduler_flat.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
     <!-- <link rel="stylesheet" href="./lib/css/dhtmlxscheduler.css" type="text/css"> -->
     <link rel="stylesheet" href="./src/css/main.css" type="text/css">
   </head>
@@ -22,10 +25,76 @@
       <div class="dhx_cal_header"></div>
       <div class="dhx_cal_data"></div>
     </div>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/3.0.0/flatpickr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <script src="./lib/js/dhtmlxscheduler.js" type="text/javascript"></script>
     <script src="./lib/js/dhtmlxscheduler_year_view.js" type="text/javascript"></script>
+    <script src="./lib/js/dhtmlxscheduler_active_links.js" type="text/javascript"></script>
+    <!-- <script src="./lib/js/dhtmlxscheduler_tooltip.js" type="text/javascript"></script> -->
     <script src="./src/js/main.js" type="text/javascript">
     </script>
+    <div id="my_form" style="display: none;">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="row">
+              <div class="col-xs-12">
+                <label for="description">Engineer </label><input type="text" class="form-control" name="description" value="" id="description"><br>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                <label for="from">From </label><input type="text" class="form-control flatpickr" name="custom1" value="" id="from"><br>
+              </div>
+              <div class="col-xs-6">
+                <label for="to">To </label><input type="text" class="form-control flatpickr" name="custom2" value="" id="to"><br><br>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                <label for="to">Type</label>
+                <select type="select" class="form-control" name="custom2" value="" id="status">
+                  <option>
+                    Vacation
+                  </option>
+                  <option>
+                    Time in lieu
+                  </option>
+                  <option>
+                    Supporting other site
+                  </option>
+                </select>
+              </div>
+              <div class="col-xs-6">
+                <label for="to">Status </label>
+                <select type="select" class="form-control" name="custom2" value="" id="status">
+                  <option>
+                    Requested
+                  </option>
+                  <option>
+                    Approved
+                  </option>
+                </select><br><br>
+              </div>
+            </div>
 
+          </div>
+          <div class="col-xs-6">
+            <br><br>
+
+          	<input type="button" class="btn btn-primary" name="save" value="Save" id="save" style="width:100px;">
+          	<input type="button" class="btn btn-info" name="close" value="Close" id="close" style="width:100px;">
+          	<input type="button" class="btn btn-danger" name="delete" value="Delete" id="delete" style="width:100px;">
+          </div>
+        </div>
+      </div>
+
+
+    </div>
   </body>
 </html>
