@@ -6,7 +6,7 @@ html, body{
 }
 /*event in day or week view*/
 .dhx_cal_event.requested_req div{
-    background-color: #FED100 !important;
+    background-color: #FF7F45 !important;
     color: black !important;
 }
 .dhx_cal_event.approved_req div{
@@ -16,8 +16,8 @@ html, body{
 
 /*multi-day event in month view*/
 .dhx_cal_event_line.requested_req{
-    background-color: #FED100 !important;
-    color: white !important;
+    background-color: #FF7F45 !important;
+    color: black !important;
 }
 .dhx_cal_event_line.approved_req{
     background-color: #34B233 !important;
@@ -26,10 +26,14 @@ html, body{
 
 /*event with fixed time, in month view*/
 .dhx_cal_event_clear.requested_req{
-    color: white !important;
+    color: #FF7F45 !important;
 }
 .dhx_cal_event_clear.approved_req{
-    color: white !important;
+    color: #34B233 !important;
+    margin-bottom: 10px;
+}
+.dhx_cal_event_clear.approved_req{
+    color: #34B233 !important;
 }
 .dhx_cal_event_clear.night_shift{
     color: black !important;
@@ -41,7 +45,7 @@ html, body{
 }
 /*event with fixed time, in year view*/
 .dhx_month_head.dhx_year_event.requested_req{
-    background-color: #FED100 !important;
+    background-color: #FF7F45 !important;
     color: black !important;
 }
 .dhx_month_head.dhx_year_event.approved_req{
@@ -51,6 +55,9 @@ html, body{
 .dhx_month_head.dhx_year_event.shift{
     background-color: transparent !important;
     color: white !important;
+}
+.dhx_cal_event_line_end{
+  height: 20px;
 }
 #my_form {
 	position: absolute;
